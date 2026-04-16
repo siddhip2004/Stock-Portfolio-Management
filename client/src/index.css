@@ -1,0 +1,1325 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Quicksand";   
+}
+
+body 
+{
+  overflow-x: hidden;
+    
+}
+
+.homepage {
+    background-image: url("./pictures/bckg.png");
+    min-height: 100vh; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginpage
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+.signuppage
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+.homeafterpage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+ background-color:black;
+ height: 100px;
+ 
+}
+
+.aboutpage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+
+.getstockpage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+.mainformpage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+.datadetailpage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes logo to left, links to right */
+  padding: 0 5%;
+  height: 80px;
+  width: 100%;
+  position: fixed; /* Stays at the top while scrolling */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo container styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar img {
+  height: 50px; /* Consistent height */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: scale(1.05);
+}
+
+/* Links Container */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Modern spacing between items */
+}
+
+/* Individual Links */
+.links a, .links span {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Simple underline hover effect */
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4ea3ec;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.links a:hover {
+  color: #4ea3ec;
+}
+
+/* Username span styling */
+.links span {
+  color: #4ea3ec;
+  border-right: 1px solid #444;
+  padding-right: 1.5rem;
+}
+
+/* Logout Button styling */
+.links button {
+  background: #4ea3ec;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.links button:hover {
+  background: white;
+  color: #030730;
+  transform: translateY(-2px);
+}
+
+.info 
+{
+    margin-top: 15%;
+    /* display: flex; */
+    display:flex;
+    color: #FFFDFA;
+}
+
+.info p
+{
+    padding-right: 75px;
+    padding-left: 10%;
+    font-weight: bold;
+    font-size: 80px;
+    width: 750px;
+    /* height: 570px; */
+    height: 61.6vh;
+    /* animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite; */
+}
+
+.info p
+{
+    background: linear-gradient(to right, #FFFDFA 0, black 10%, #FFFDFA 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 750px;
+    }
+    100% {
+      background-position: 750px;
+    }
+  }
+
+
+
+.info button 
+{
+  width: 190px;
+  height: 60px;
+  font-size: 25px;
+  font-weight:bolder;
+  /* background-color: #FFFFF0; */
+  background-color: transparent;
+  border: 5px solid lightgrey;
+  box-shadow: 2px 2px 4px rgba(248, 248, 245, 0.2);
+  margin-top: 175%;
+  margin-left: -435%;
+  /* margin-bottom: 10%; */
+  text-decoration: none;
+  color: #FFFDFA;
+  font-size: 29px;
+}
+
+.info button:hover 
+{
+    
+    border: none;
+    cursor: pointer;    
+    background-color:rgb(78, 163, 236);
+    color: #FFFFF0; 
+    text-align: centre;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.about-page-unique-root {
+    background-color: #000000;
+    /* CHANGE: Use height instead of min-height to lock it to the screen */
+    height: calc(100vh - 80px); 
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Keep padding, but ensure it doesn't add to the height */
+    padding: 20px; 
+    box-sizing: border-box;
+    
+    color: white;
+    
+    /* Force the container to hide anything that pokes out */
+    overflow: hidden; 
+    scrollbar-color: calc();
+}
+
+.about-page-unique-root .about-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.about-page-unique-root .hero-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: linear-gradient(145deg, #111111 0%, #050505 100%);
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(78, 163, 236, 0.2);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+/* Image Spotlight Effect */
+.about-page-unique-root .hero-image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.about-page-unique-root .hero-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4ea3ec;
+    position: relative;
+    z-index: 2;
+}
+
+.about-page-unique-root .hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(78, 163, 236, 0.3) 0%, transparent 70%);
+    z-index: 1;
+}
+
+/* Content Styling */
+.about-page-unique-root .hero-content {
+    flex-grow: 1;
+}
+
+.about-page-unique-root .hero-subtitle {
+    color: #4ea3ec;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.about-page-unique-root .hero-name {
+    font-size: 56px;
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(to right, #ffffff, #4ea3ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-page-unique-root .hero-divider {
+    width: 80px;
+    height: 4px;
+    background: #4ea3ec;
+    margin: 25px 0;
+    border-radius: 2px;
+}
+
+.about-page-unique-root .hero-bio {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.about-page-unique-root .hero-details {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-page-unique-root .detail-label {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.about-page-unique-root .detail-value {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Actions */
+.about-page-unique-root .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.about-page-unique-root .github-btn {
+    padding: 15px 30px;
+    background-color: #4ea3ec;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about-page-unique-root .github-btn:hover {
+    background-color: white;
+    color: #4ea3ec;
+    transform: translateY(-3px);
+}
+
+.about-page-unique-root .email-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.about-page-unique-root .email-link:hover {
+    color: #4ea3ec;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 850px) {
+    .about-page-unique-root .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+    .about-page-unique-root .hero-divider {
+        margin: 25px auto;
+    }
+    .about-page-unique-root .hero-details {
+        justify-content: center;
+    }
+    .about-page-unique-root .hero-actions {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+/* Container to ensure the whole page is black */
+.logindiv, .signupdiv {
+    background-color: #000000;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* The Box Card */
+.login, .signup {
+    width: 100%;
+    max-width: 450px;
+    background-color: #111111;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #333;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Logo and Header */
+.login img, .signup img {
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(78, 163, 236, 0.5));
+}
+
+.login h2, .signup h2 {
+    color: #4ea3ec;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+/* Label Styling - Forces visibility */
+.login label, .signup label {
+    display: block;
+    color: #ffffff !important; /* Forces text to be white */
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: left;
+    font-family: inherit; /* Prevents <pre> from using monospace */
+}
+
+/* Resetting the <pre> tag layout impact */
+pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: inherit;
+    overflow: visible;
+}
+
+/* Input Fields */
+.login input, .signup input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures it doesn't overflow the card */
+}
+
+.login input:focus, .signup input:focus {
+    border-color: #4ea3ec;
+    outline: none;
+    box-shadow: 0 0 8px rgba(78, 163, 236, 0.2);
+}
+
+/* Submit Button */
+.login button, .signup button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4ea3ec;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.login button:hover:not(:disabled), .signup button:hover:not(:disabled) {
+    background-color: #ffffff;
+    color: #4ea3ec;
+    transform: translateY(-2px);
+}
+
+.login button:disabled, .signup button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #333;
+}
+
+/* Links */
+.login a, .signup a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4ea3ec;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.login a:hover, .signup a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Error Message */
+.error {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(230, 57, 70, 0.1);
+    border: 1px solid #e63946;
+    color: #e63946;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  /* Unique wrapper to prevent leaking styles to other pages */
+.contact-page-unique-root {
+    background-color: #000000;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* The Glass-style Form Card */
+.contact-page-unique-root .contact-container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #111111;
+    padding: 50px 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.contact-page-unique-root h1 {
+    color: #4ea3ec;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.contact-page-unique-root .contact-subtext {
+    color: #888;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Form Inputs */
+.contact-page-unique-root .input-group {
+    margin-bottom: 20px;
+}
+
+.contact-page-unique-root input, 
+.contact-page-unique-root textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: #1a1a1a;
+    border: 1px solid #444; /* High visibility border */
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.contact-page-unique-root textarea {
+    height: 120px;
+    resize: none; /* Keeps the look clean */
+}
+
+/* Hover & Focus Effects */
+.contact-page-unique-root input:focus, 
+.contact-page-unique-root textarea:focus {
+    border-color: #4ea3ec;
+    outline: none;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(78, 163, 236, 0.2);
+}
+
+/* The Blue Connect Button */
+.contact-page-unique-root .contact-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #4ea3ec;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.contact-page-unique-root .contact-button:hover {
+    background-color: #ffffff;
+    color: #4ea3ec;
+    transform: translateY(-2px);
+}
+
+/* Placeholder Color */
+.contact-page-unique-root ::placeholder {
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  width: 100%;
+  height: 320px; /* Increased from 250px */
+  margin-bottom: 20px; /* Reduced gap to button */
+  display: flex;
+  align-items: center;
+  overflow: visible; /* Crucial: ensures zoom effect isn't cut off */
+}
+
+/* 2. Adjust the individual slide and image behavior */
+.slide {
+  width: 300px; /* Slightly wider for better aspect ratio */
+  height: 200px; /* Fixed height for the slide */
+  padding: 10px;
+  flex-shrink: 0; /* Prevents images from squishing */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* OR use 'cover' if you want them to fill the box without stretching */
+  border-radius: 12px;
+  background-color: #111; /* Fills gaps if image is a different shape */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  transition: transform 0.5s ease;
+}
+
+.slide-track {
+  display: flex;
+  /* width: calc(250px * 7); */
+  animation: scroll 28s linear infinite;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* transform: translateX(calc(-250px * 1)); */
+    transform: translateX(calc(-250px * 14));
+  }
+}
+
+
+
+.slide img:hover {
+  transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0%;
+  top: 0%;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+/* .main 
+{
+  background-color: black;
+} */
+
+
+/* Container takes up the full viewport height minus the navbar */
+/* 1. MAIN WRAPPER */
+.container {
+  min-height: auto;           /* Removes the "floating in middle" gap */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  /* Deep black-to-charcoal radial for depth */
+  background: radial-gradient(circle at center, #111111 0%, #000000 100%);
+  color: #ffffff;
+  padding: 120px 20px 20px 20px; /* Top padding for the navbar */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.homeafter {
+  max-width: 900px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+  /* margin-bottom: 25%; Tight gap to the slider */
+}
+
+/* 2. HERO TYPOGRAPHY */
+.homeafter h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  /* Electric Blue to White gradient */
+  background: linear-gradient(to right, #4ea3ec, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homeafter h5 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #4ea3ec;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.arrangepara {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+
+.homeafter p {
+  font-size: 20px;
+  color: #b0b0b0; /* Dimmer gray for paragraphs to make H1 pop */
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* 3. INFINITE SLIDER SECTION */
+.forbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 100px 0; /* Tight top padding to pull it closer to text */
+  background-color: #000000; /* Matching the container perfectly */
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border for images */
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+  border-color: #4ea3ec; /* Blue glow on hover */
+}
+
+/* 4. THE ACTION BUTTON */
+.forbutton button {
+  width: 240px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #4ea3ec;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(78, 163, 236, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.forbutton button:hover {
+  background-color: #ffffff;
+  color: #4ea3ec;
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+
+
+
+
+
+/* 1. SECTION TITLE */
+/* 1. THE HEADING - Ensuring it sits on black */
+/* 1. THE HEADING - This kills the white block */
+.firstdiv {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;             /* Remove margins that might show parent background */
+  padding: 60px 0 20px 0; 
+  color: #ffffff !important; 
+  text-transform: uppercase;
+  background-color: #000000 !important; /* FORCED BLACK */
+  width: 100%;
+  display: block;
+}
+
+/* The Blue Line under the text */
+.firstdiv span {
+  border-bottom: 3px solid #4ea3ec;
+  padding-bottom: 10px;
+}
+
+/* 2. THE GRID CONTAINER */
+.mainDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 25px; 
+  padding: 40px 8% 100px 8%;
+  background-color: #000000 !important; /* FORCED BLACK */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 3. THE CARDS - Fixed Height & No Gaps */
+.mainDiv .card {
+  background: #111111; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 12px;
+  height: 480px;        /* Fixed total height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* 4. IMAGE */
+.mainDiv .card img {
+  width: 100%;
+  height: 180px;       /* Fixed image height */
+  object-fit: cover;
+}
+
+/* 5. CARD BODY - The "Gap Killer" */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;        /* Takes up remaining space */
+}
+
+.card-text {
+  font-size: 17px; 
+  color: #e0e0e0;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  /* Prevents text from pushing the button down too far */
+  display: -webkit-box;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 6. READ MORE - Fixed at the very bottom */
+.read {
+  margin-top: auto;    /* This is the magic: it pushes button to bottom */
+  padding-top: 10px;
+}
+
+.read a {
+  display: block; 
+  text-align: center;
+  text-decoration: none;
+  background-color: #1a1a1a;
+  color: #4ea3ec;
+  padding: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #4ea3ec;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Full page background to match your site */
+.explore-container {
+  min-height: 100vh;
+  background: #000000; /* Pure black to match HomeAfter */
+  color: #ffffff;
+  padding: 100px 20px; /* Space for Navbar */
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* 1. FORCE THE PAGE BACKGROUND */
+.explore-page {
+  background-color: #000000 !important; /* This kills the cornsilk */
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getinput {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* 2. TITLES - Making them pop against black */
+.getinput h2 {
+  font-size: 40px;
+  color: #4ea3ec; /* Electric Blue */
+  margin-bottom: 20px;
+  font-weight: 800;
+  padding: 0 10%;
+}
+
+.getinput h3 {
+  font-size: 24px;
+  color: #ffffff;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+/* 3. INPUT AREA */
+.getinput label {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.getinput input {
+  background: #1a1a1a;
+  border: 1px solid #4ea3ec;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.getinput button {
+  background-color: #4ea3ec;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.getinput button:hover {
+  background-color: white;
+  color: #4ea3ec;
+}
+
+/* 4. DATA SECTION */
+.data {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  background: #111111;
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.column1 {
+  text-align: right;
+  color: #888888; /* Labels in grey */
+}
+
+.column2 {
+  text-align: left;
+  color: #ffffff; /* Values in white */
+}
+
+.column1 p, .column2 p {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* All styles now start with .mainform-page-unique-root */
+
+/* RESET & WRAPPER */
+.mainform-page-unique-root {
+  background-color: #000000;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* THE FORM BOX - Now with a subtle border to ensure it's visible */
+.mainform-page-unique-root .optimizer-container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #111111;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #333;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.mainform-page-unique-root .optimizer-heading {
+  text-align: center;
+  color: #4ea3ec;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* INPUT VISIBILITY */
+.mainform-page-unique-root .optimizer-label {
+  display: block;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.mainform-page-unique-root .input {
+  width: 100%;
+  padding: 14px;
+  background-color: #1a1a1a;
+  border: 1px solid #444; /* Brighter border so it's not invisible */
+  border-radius: 8px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.mainform-page-unique-root .input:focus {
+  border-color: #4ea3ec;
+  outline: none;
+  background-color: #222;
+}
+
+.mainform-page-unique-root .button {
+  width: 100%;
+  padding: 16px;
+  background-color: #4ea3ec;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mainform-page-unique-root .button:hover {
+  background-color: #3582c4;
+}
+
+/* RESULTS DASHBOARD STYLE */
+.mainform-page-unique-root .result-section {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 30px;
+}
+
+.mainform-page-unique-root .metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.mainform-page-unique-root .metric-card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.mainform-page-unique-root .metric-label {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.mainform-page-unique-root .metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mainform-page-unique-root .highlight-green { color: #4ade80; }
+.mainform-page-unique-root .highlight-blue { color: #4ea3ec; }
+
+/* WEIGHTS CHART */
+.mainform-page-unique-root .weights-container {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.mainform-page-unique-root .weights-container h3,  .mainform-page-unique-root .resultHeading{
+  color: #888;
+}
+
+.mainform-page-unique-root .weight-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.mainform-page-unique-root .ticker-name {
+  width: 70px;
+  font-weight: bold;
+  color: #4ea3ec;
+}
+
+.mainform-page-unique-root .weight-bar-bg {
+  flex-grow: 1;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  margin: 0 15px;
+  overflow: hidden;
+}
+
+.mainform-page-unique-root .weight-bar-fill {
+  height: 100%;
+  background: #4ea3ec;
+  border-radius: 5px;
+}
+
+.mainform-page-unique-root .weight-percentage {
+  width: 50px;
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}

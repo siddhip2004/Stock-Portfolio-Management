@@ -1,0 +1,8 @@
+/client/node_modules
+/server/node_modules
+/app/venv
+/client/.env
+/server/.env 
+# C:\Users\HPP\Desktop\sem8\MIS\StockPortfolioManagement-main\StockPortfolioManagement-main\client\.env
+# C:\Users\HPP\Desktop\sem8\MIS\StockPortfolioManagement-main\StockPortfolioManagement-main\server\.env
+# C:\Users\HPP\Desktop\sem8\MIS\StockPortfolioManagement-main\StockPortfolioManagement-main\app\.venv
