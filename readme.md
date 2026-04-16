@@ -117,7 +117,7 @@ This project provides a comprehensive guidance to the user by providing them ins
  python -m venv .venv. 
  .venv\Scripts\activate
  pip install -r requirements.txt
- pip list (To Check all requirements installed)
+ pip list 
  python main.py
   ```
 
